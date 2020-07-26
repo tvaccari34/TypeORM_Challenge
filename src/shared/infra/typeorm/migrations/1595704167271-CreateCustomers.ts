@@ -24,12 +24,12 @@ export default class CreateCustomers1595704167271
             isUnique: true,
           },
           {
-            name: 'create_at',
+            name: 'created_at',
             type: 'timestamp',
             default: 'now()',
           },
           {
-            name: 'update_at',
+            name: 'updated_at',
             type: 'timestamp',
             default: 'now()',
           },
