@@ -48,6 +48,10 @@ class CreateOrderService {
 
       const totalQuantity = productFound.quantity - product.quantity;
 
+      if (totalQuantity < 0) {
+        throw new AppError('Exceed the quantity for this product.');
+      }
+
       productFound.quantity = totalQuantity;
 
       return productFound;
